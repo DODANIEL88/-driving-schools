@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Websites for Driving Schools | R1,500 Once-Off | WebmaticSA</title>
+<meta name="description" content="Get your driving school found on Google. A booking-ready page built in 2–3 days — R1,500 once-off, first year of hosting included. WebmaticSA, South Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "WebmaticSA",
+  "url": "https://webmaticsa.co.za",
+  "telephone": "+27677890493",
+  "areaServed": "South Africa",
+  "description": "Google-ready landing pages for South African driving schools. R1,500 once-off including first year hosting.",
+  "priceRange": "R1500"
+}
+</script>
+<style>
+  :root{
+    --asphalt:#17191d;
+    --asphalt-2:#22252b;
+    --paint:#f2c200;      /* SA road-marking yellow */
+    --chalk:#f7f6f2;
+    --lplate:#d3382c;     /* learner plate red */
+    --ink:#26282d;
+    --muted:#6d717a;
+    --line:#e3e1da;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--chalk);
+    color:var(--ink);
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,.price-big{
+    font-family:'Anton',sans-serif;
+    font-weight:400;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    line-height:1.05;
+  }
+  a{color:inherit;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px;}
+
+  /* ---- the road spine (signature element) ---- */
+  .road-spine{
+    position:relative;
+  }
+  .road-spine::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;bottom:0;
+    width:4px;
+    transform:translateX(-50%);
+    background:repeating-linear-gradient(
+      to bottom,
+      var(--paint) 0 26px,
+      transparent 26px 50px
+    );
+    opacity:.55;
+    z-index:0;
+  }
+  .stop{
+    position:relative;
+    z-index:1;
+    background:var(--chalk);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px 24px;
+    margin:34px auto;
+    max-width:640px;
+  }
+
+  /* ---- header ---- */
+  header{
+    background:var(--asphalt);
+    color:var(--chalk);
+    padding:14px 0;
+  }
+  .header-row{display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px;}
+  .lplate{
+    background:#fff;
+    color:var(--lplate);
+    font-family:'Anton',sans-serif;
+    font-size:18px;
+    width:30px;height:30px;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:5px;
+    border:2px solid var(--lplate);
+  }
+  .header-call{
+    font-size:14px;font-weight:700;text-decoration:none;
+    background:var(--paint);color:var(--asphalt);
+    padding:8px 14px;border-radius:8px;white-space:nowrap;
+  }
+
+  /* ---- hero ---- */
+  .hero{
+    background:var(--asphalt);
+    color:var(--chalk);
+    padding:54px 0 64px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{ /* horizontal road line under hero */
+    content:"";
+    position:absolute;left:0;right:0;bottom:24px;height:5px;
+    background:repeating-linear-gradient(to right,var(--paint) 0 40px,transparent 40px 70px);
+    opacity:.7;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--paint);
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(34px,8vw,56px);
+    margin-bottom:18px;
+  }
+  .hero h1 .hit{color:var(--paint);}
+  .hero p.sub{
+    font-size:18px;color:#c9ccd2;max-width:520px;margin-bottom:28px;
+  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    text-decoration:none;font-weight:700;font-size:17px;
+    padding:15px 24px;border-radius:10px;
+    min-height:48px;
+  }
+  .btn-wa{background:#25d366;color:#0b2616;}
+  .btn-call{background:transparent;color:var(--chalk);border:2px solid #4a4e57;}
+  .price-chip{
+    margin-top:22px;display:inline-block;
+    background:var(--asphalt-2);
+    border:1px solid #3a3e46;
+    color:var(--chalk);
+    border-radius:10px;
+    padding:10px 16px;font-size:15px;
+  }
+  .price-chip strong{color:var(--paint);}
+
+  /* ---- sections ---- */
+  section{padding:8px 0;}
+  .kicker{
+    font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--lplate);margin-bottom:10px;
+  }
+  h2{font-size:clamp(26px,6vw,36px);margin-bottom:14px;}
+  .stop p{color:var(--muted);}
+  .stop p strong{color:var(--ink);}
+
+  ul.checks{list-style:none;margin-top:16px;}
+  ul.checks li{
+    padding:11px 0 11px 36px;
+    border-bottom:1px dashed var(--line);
+    position:relative;
+  }
+  ul.checks li:last-child{border-bottom:none;}
+  ul.checks li::before{
+    content:"✓";
+    position:absolute;left:0;top:10px;
+    width:24px;height:24px;border-radius:6px;
+    background:var(--paint);color:var(--asphalt);
+    font-weight:700;display:flex;align-items:center;justify-content:center;
+    font-size:14px;
+  }
+
+  /* price block */
+  .price-stop{
+    background:var(--asphalt);
+    color:var(--chalk);
+    border:none;
+    text-align:center;
+  }
+  .price-stop .kicker{color:var(--paint);}
+  .price-big{
+    font-size:clamp(52px,14vw,84px);
+    color:var(--paint);
+    margin:8px 0 2px;
+  }
+  .price-once{font-size:15px;letter-spacing:2px;text-transform:uppercase;color:#c9ccd2;}
+  .price-incl{
+    margin:22px auto 0;max-width:420px;text-align:left;
+  }
+  .price-incl li{border-bottom-color:#33363d;}
+  .price-incl li::before{background:var(--paint);}
+  .price-stop p.fine{
+    margin-top:20px;font-size:13.5px;color:#9ba0a8;
+  }
+
+  /* steps */
+  .steps{counter-reset:step;list-style:none;margin-top:10px;}
+  .steps li{
+    counter-increment:step;
+    padding:14px 0 14px 52px;position:relative;
+    border-bottom:1px dashed var(--line);
+  }
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{
+    content:counter(step);
+    position:absolute;left:0;top:12px;
+    width:38px;height:38px;border-radius:8px;
+    background:var(--asphalt);color:var(--paint);
+    font-family:'Anton',sans-serif;font-size:19px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .steps strong{display:block;}
+  .steps span{color:var(--muted);font-size:15.5px;}
+
+  /* example sign */
+  .sign{
+    background:#fff;border:3px solid var(--asphalt);border-radius:12px;
+    padding:22px;margin-top:18px;
+    box-shadow:6px 6px 0 var(--paint);
+  }
+  .sign .sign-h{
+    font-family:'Anton',sans-serif;font-size:21px;text-transform:uppercase;line-height:1.2;
+  }
+  .sign .stars{color:#e7a800;font-size:15px;margin-top:6px;}
+  .sign .sign-cta{
+    margin-top:12px;display:inline-block;background:#25d366;color:#0b2616;
+    font-weight:700;font-size:14px;padding:9px 14px;border-radius:8px;
+  }
+  .sign-caption{font-size:13.5px;color:var(--muted);margin-top:12px;}
+
+  /* faq */
+  details{
+    border-bottom:1px dashed var(--line);padding:13px 0;
+  }
+  details:last-of-type{border-bottom:none;}
+  summary{
+    font-weight:700;cursor:pointer;list-style:none;position:relative;padding-right:28px;
+  }
+  summary::after{content:"+";position:absolute;right:2px;top:0;color:var(--lplate);font-size:20px;font-weight:700;}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:8px;color:var(--muted);font-size:15.5px;}
+
+  /* final cta */
+  .final{
+    background:var(--asphalt);color:var(--chalk);text-align:center;
+    padding:60px 0 70px;margin-top:40px;position:relative;
+  }
+  .final::before{
+    content:"";position:absolute;left:0;right:0;top:0;height:5px;
+    background:repeating-linear-gradient(to right,var(--paint) 0 40px,transparent 40px 70px);
+  }
+  .final h2{font-size:clamp(30px,7vw,44px);}
+  .final p{color:#c9ccd2;margin:14px auto 26px;max-width:460px;}
+
+  footer{
+    background:#101115;color:#8b8f97;font-size:13px;
+    padding:26px 0 90px;
+  }
+  footer .wrap{display:flex;flex-direction:column;gap:6px;}
+  footer a{color:#c9ccd2;text-decoration:none;}
+
+  /* sticky whatsapp */
+  .wa-sticky{
+    position:fixed;right:16px;bottom:16px;z-index:50;
+    background:#25d366;color:#0b2616;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
+    text-decoration:none;
+  }
+  .wa-sticky svg{width:30px;height:30px;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+  @media (max-width:480px){
+    .header-call span.lbl{display:none;}
+    .cta-row .btn{width:100%;justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <div class="brand"><span class="lplate">L</span> WebmaticSA</div>
+    <a class="header-call" href="tel:+27677890493">📞 <span class="lbl">067 789 0493</span></a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">For South African driving schools</span>
+    <h1>Your learners pass.<br>Your school <span class="hit">doesn't show up</span> on Google.</h1>
+    <p class="sub">Parents search "driving school in [your suburb]" every single day. If you don't have a website, that booking goes to the school that does. We fix that — fast.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/27677890493?text=Hi%20Don%2C%20I%20run%20a%20driving%20school%20and%20I%27m%20interested%20in%20the%20R1%2C500%20page." aria-label="WhatsApp WebmaticSA">WhatsApp Us Now</a>
+      <a class="btn btn-call" href="tel:+27677890493">Call 067 789 0493</a>
+    </div>
+    <span class="price-chip"><strong>R1,500 once-off</strong> — first year of hosting included. No monthly fees.</span>
+  </div>
+</section>
+
+<div class="road-spine">
+
+  <div class="stop">
+    <span class="kicker">The problem</span>
+    <h2>Five stars on Google Maps. Zero website.</h2>
+    <p>Sound familiar? Most driving schools have earned great reviews — but with no website, Google has nothing to rank when someone searches <strong>"driving lessons near me"</strong>. So schools with weaker reviews and a basic website get found first. You did the hard part already. You're just invisible.</p>
+  </div>
+
+  <div class="stop">
+    <span class="kicker">What you get</span>
+    <h2>One page. Built to book lessons.</h2>
+    <ul class="checks">
+      <li><strong>Google-ready page</strong> for your suburb — built to show up for "driving school [your area]"</li>
+      <li><strong>WhatsApp booking button</strong> — enquiries come straight to your phone</li>
+      <li><strong>Click-to-call</strong> for parents who'd rather phone</li>
+      <li><strong>Your 5-star reviews</strong> displayed front and centre</li>
+      <li><strong>Your codes &amp; prices listed</strong> — Code 8, 10, 14, learners help, K53 prep</li>
+      <li><strong>Linked to your Google Business Profile</strong> so Maps and your site work together</li>
+      <li><strong>Works perfectly on phones</strong> — where all your customers are</li>
+    </ul>
+  </div>
+
+  <div class="stop price-stop">
+    <span class="kicker">The price</span>
+    <div class="price-big">R1,500</div>
+    <div class="price-once">Once-off · That's it</div>
+    <ul class="checks price-incl">
+      <li>Full page design &amp; build</li>
+      <li>First year of hosting included</li>
+      <li>Live in 2–3 business days</li>
+      <li>No monthly fees in year one</li>
+    </ul>
+    <p class="fine">After your first year, hosting renews at a simple low annual fee — we'll remind you well before anything is due. Cancel any time.</p>
+  </div>
+
+  <div class="stop">
+    <span class="kicker">How it works</span>
+    <h2>Three steps. No homework for you.</h2>
+    <ol class="steps">
+      <li><strong>WhatsApp us</strong><span>Tell us your school name and suburb. We'll confirm everything else in one short chat.</span></li>
+      <li><strong>We build it</strong><span>2–3 business days. We pull your reviews, codes, prices and photos together.</span></li>
+      <li><strong>You approve, it goes live</strong><span>Only happy? Only then. Bookings start coming to your WhatsApp.</span></li>
+    </ol>
+  </div>
+
+  <div class="stop">
+    <span class="kicker">What it looks like</span>
+    <h2>Your school, front of the queue.</h2>
+    <div class="sign" aria-label="Example of a driving school landing page headline">
+      <div class="sign-h">Driving School in [Your Suburb]<br>Pass First Time with Patient Instructors</div>
+      <div class="stars">★★★★★ 5.0 on Google · 12 Years Teaching · 900+ Learners Passed</div>
+      <span class="sign-cta">WhatsApp Us to Book</span>
+    </div>
+    <p class="sign-caption">An example hero section — yours is built with your real reviews, your codes, your prices, your photos.</p>
+  </div>
+
+  <div class="stop">
+    <span class="kicker">Questions</span>
+    <h2>Straight answers</h2>
+    <details>
+      <summary>Do I need to write anything or send lots of stuff?</summary>
+      <p>No. One WhatsApp chat is enough. We pull your reviews from Google, and you send us a few photos — pass photos and your branded car work best.</p>
+    </details>
+    <details>
+      <summary>I already have a Facebook page. Why do I need this?</summary>
+      <p>Facebook is great — keep it. But parents searching Google can't find a Facebook page easily, and Google won't rank it for "driving school [suburb]". The page works alongside your Facebook, not instead of it.</p>
+    </details>
+    <details>
+      <summary>What happens after the first year?</summary>
+      <p>Your hosting renews at a simple low annual fee. We remind you a month before. No surprises, no lock-in — cancel any time and we'll hand everything over.</p>
+    </details>
+    <details>
+      <summary>Can you also help with my Google Business Profile?</summary>
+      <p>Yes — every build includes a quick-start guide for your profile, and we link your new page to it so Maps and your website work together.</p>
+    </details>
+  </div>
+
+</div>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Be the school parents find first.</h2>
+    <p>R1,500 once-off. First year hosted. Live this week. One WhatsApp message starts it.</p>
+    <a class="btn btn-wa" href="https://wa.me/27677890493?text=Hi%20Don%2C%20I%20run%20a%20driving%20school%20and%20I%27m%20interested%20in%20the%20R1%2C500%20page.">WhatsApp Don Now</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#f7f6f2;">WebmaticSA</strong> — websites for South African service businesses</div>
+    <div><a href="tel:+27677890493">067 789 0493</a> · <a href="https://webmaticsa.co.za">webmaticsa.co.za</a></div>
+    <div>POPIA notice: Any details you share with us are used only to contact you about your website and are never sold or shared with third parties.</div>
+  </div>
+</footer>
+
+<a class="wa-sticky" href="https://wa.me/27677890493?text=Hi%20Don%2C%20I%20run%20a%20driving%20school%20and%20I%27m%20interested%20in%20the%20R1%2C500%20page." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm0 21.7c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.4 4.4-9.8 9.8-9.8 5.4 0 9.8 4.4 9.8 9.8s-4.4 9.6-8.8 9.6zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+</body>
+</html>
